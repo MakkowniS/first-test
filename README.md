@@ -103,8 +103,8 @@ Git сравнил содержимое файла с последней вер�
 
 ```mermaid
 graph LR;
-	untracked -- "git add" --> staged + tracked;
-	staged -- "git commit" --> commited + tracked;
-	tracked -- "Изменения" --> modified + tracked;
-	modified -- "git add" --> staged + tracked;
+	untracked -- "git add" --> staged/tracked;
+	staged -- "git commit" --> commited/tracked;
+	tracked -- "Изменения" --> modified/tracked;
+	modified -- "git add" --> staged/tracked;
 ```
